@@ -1,23 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" />
+		<style>
+			.row {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+
+			.column {
+				display: flex;
+				flex-direction: column;
+				flex-basis: 100%;
+				flex: 1;
+			}
+		</style>
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background="images/forest.png"></section>
+				<section data-background="images/forest.png">
+					<h1 style="color: orange">Find Your Path</h1>
+					<p>Guido Stein</p>
+				</section>
+				<section data-background="images/forest.png">
+					<h2 style="color: orange">Overview</h2>
+					<ul>
+						<li>My Path</li>
+						<li>Lions, and Tigers, and Bears</li>
+						<li>Is there a map</li>
+					</ul>
+				</section>
+				<section>
+					<section data-background="images/burrito.png">
+						<h2 style="color: black; background-color: white">
+							Guido Like Burrito
+						</h2>
+					</section>
+					<section data-background="images/trail.png">
+						<h2 style="color: orange">My Path</h2>
+						<div class="row">
+							<div class="column">
+								<ul
+									style="
+										list-style-type: none;
+										border-right: 1px orange solid;
+									"
+								>
+									<li>
+										<span style="color: orange">
+											GIS Student
+										</span>
+										<br />
+										Clark University
+										<br />
+										Clark Labs
+									</li>
+									<li style="margin-top: 1em">
+										<span style="color: orange">
+											GIS Tech
+										</span>
+										<br />
+										USDA FSA
+										<br />
+										Industrial Economics
+									</li>
+									<li style="margin-top: 1em">
+										<span style="color: orange">
+											GIS Planner
+										</span>
+										<br />
+										Sasaki
+									</li>
+								</ul>
+							</div>
+							<div class="column">
+								<ul style="list-style-type: none">
+									<li>
+										<span style="color: orange">
+											Geospatial Alchemist
+										</span>
+										<br />
+										Applied Geographics
+									</li>
+									<li style="margin-top: 1em">
+										<span style="color: orange">
+											Geospatial Data Engineer
+										</span>
+										<br />
+										Liveby
+										<br />
+										Resurety
+										<br />
+										Galehead Development
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section data-background="images/trail.png">
+						<h2 style="color: orange">Packing Fundamentals</h2>
+						<ul style="list-style-type: none">
+							<li>Raster Analysis</li>
+							<li>Vector Analysis</li>
+							<li>Projection</li>
+							<li>Composite Overlay</li>
+							<li>Cellular Automota</li>
+							<li>Scripting</li>
+							<li>Cartography</li>
+						</ul>
+					</section>
+					<section data-background="images/trail.png">
+						<h2 style="color: orange">Picking Daisies</h2>
+						<div class="row">
+							<div class="column">
+								<ul
+									style="
+										list-style-type: none;
+										border-right: 1px orange solid;
+										padding-left: 2em;
+									"
+								>
+									<li>Adobe</li>
+									<li>Autodesk</li>
+									<li>ESRI</li>
+									<li>Excel</li>
+									<li>MSSQL</li>
+									<li>Python</li>
+								</ul>
+							</div>
+							<div class="column">
+								<ul
+									style="
+										list-style-type: none;
+										padding-left: 2em;
+									"
+								>
+									<li>FME</li>
+									<li>Javascript</li>
+									<li>ogr2ogr</li>
+									<li>PostGIS</li>
+									<li>Prefect</li>
+									<li>SQL</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -33,7 +178,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 			});
 		</script>
 	</body>
